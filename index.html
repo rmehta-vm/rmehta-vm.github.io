@@ -1,217 +1,38 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>R Mehta — Portfolio</title>
-  <meta name="description" content="Minimal dark portfolio landing page for rmehta-vm on GitHub Pages." />
-  <meta property="og:title" content="R Mehta — Portfolio" />
-  <meta property="og:description" content="Projects, writing, and contact." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0b0f16" />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>R Mehta GitHub</title>
   <style>
-    :root{
-      --bg:#0b0f16;
-      --panel:#121826;
-      --muted:#94a3b8;
-      --text:#e6edf3;
-      --brand:#6ee7ff;
-      --accent:#a78bfa;
-      --ring: rgba(110,231,255,.35);
-      --radius: 18px;
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0b0f16;
+      color: #e6edf3;
+      font-family: system-ui, sans-serif;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%;background:linear-gradient(160deg,var(--bg),#0e1421 60%, #0b0f16);}
-    body{color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1050px;margin:0 auto;padding:28px}
-    header{
-      border:1px solid rgba(255,255,255,.06);
-      background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
-      backdrop-filter: blur(6px);
-      border-radius:var(--radius);
-      padding:18px 20px;
-      position:sticky;top:18px;z-index:5
+    a {
+      color: #6ee7ff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      border: 2px solid #6ee7ff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
     }
-    .nav{display:flex;align-items:center;gap:16px;justify-content:space-between}
-    .logo{display:flex;gap:12px;align-items:center;font-weight:700;letter-spacing:.3px}
-    .logo .dot{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #a5f3fc, #22d3ee 60%, #0891b2);}
-    .links a{opacity:.9;padding:8px 10px;border-radius:10px}
-    .links a:hover{background:rgba(255,255,255,.06)}
-    .hero{
-      margin-top:32px;display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center
+    a:hover {
+      background: #6ee7ff;
+      color: #0b0f16;
     }
-    @media (max-width:900px){.hero{grid-template-columns:1fr}}
-    .card{
-      background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.06);
-      border-radius:var(--radius);
-      padding:28px;
-      box-shadow: 0 10px 40px rgba(0,0,0,.35);
-    }
-    h1{font-size:clamp(28px,4.8vw,44px);line-height:1.15;margin:0 0 10px}
-    .sub{color:var(--muted);font-size:clamp(14px,2.2vw,18px)}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
-    .btn{
-      display:inline-flex;align-items:center;gap:10px;
-      padding:12px 16px;border-radius:14px;font-weight:600;
-      border:1px solid rgba(255,255,255,.08);
-      background:linear-gradient(180deg,#172033,#0f1729);
-      transition:.2s transform, .2s box-shadow, .2s background;
-    }
-    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(110,231,255,.12)}
-    .btn.brand{background:linear-gradient(180deg,#0ea5b0,#0c8797);border-color:transparent;box-shadow:0 10px 24px var(--ring)}
-    .btn.ghost{background:transparent}
-    .badge{
-      display:inline-flex;align-items:center;gap:8px;
-      border:1px dashed rgba(255,255,255,.16);
-      padding:8px 12px;border-radius:999px;color:var(--muted);font-size:14px
-    }
-    .spark{width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 40% 40%, #fff, #a78bfa 60%, #4c1d95);}
-    .grid{
-      margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px
-    }
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    .tile{
-      padding:20px;border-radius:16px;border:1px solid rgba(255,255,255,.06);
-      background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.015));
-      min-height:160px;display:flex;flex-direction:column;justify-content:space-between
-    }
-    .tile h3{margin:0 0 8px;font-size:18px}
-    .tile p{margin:0;color:var(--muted);font-size:14px}
-    .foot{
-      margin:28px 0 6px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap
-    }
-    .pill{
-      display:inline-flex;gap:8px;align-items:center;font-size:12px;
-      border:1px solid rgba(255,255,255,.08);padding:6px 10px;border-radius:999px;color:var(--muted)
-    }
-    /* subtle float-in animation */
-    .reveal{opacity:0;transform:translateY(10px);animation:reveal .7s ease forwards}
-    .reveal:nth-child(1){animation-delay:.05s}
-    .reveal:nth-child(2){animation-delay:.12s}
-    .reveal:nth-child(3){animation-delay:.18s}
-    @keyframes reveal{to{opacity:1;transform:none}}
-    /* focus styles */
-    a:focus-visible, button:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:10px}
   </style>
 </head>
 <body>
-  <div class="wrap">
-
-    <header class="reveal">
-      <nav class="nav">
-        <div class="logo">
-          <div class="dot" aria-hidden="true"></div>
-          <span>R&nbsp;Mehta</span>
-        </div>
-        <div class="links" aria-label="Primary">
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
-
-    <main class="hero">
-      <section class="card reveal" style="min-height:280px">
-        <span class="badge"><span class="spark"></span> Now live on GitHub Pages</span>
-        <h1>Hello, I’m <span style="color:var(--brand)">R Mehta</span>.<br/> I build useful things.</h1>
-        <p class="sub">
-          Minimal, fast, and privacy-friendly projects. This page is a simple launchpad to my GitHub work.
-        </p>
-        <div class="cta">
-          <a class="btn brand" href="https://github.com/rmehta-vm" target="_blank" rel="noopener">
-            <!-- GitHub icon (inline SVG) -->
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.76.08-.75.08-.75 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1 .11-.8.42-1.33.76-1.64-2.67-.31-5.47-1.34-5.47-5.96 0-1.32.47-2.4 1.24-3.25-.13-.31-.54-1.56.12-3.24 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.28-1.56 3.29-1.24 3.29-1.24.66 1.68.25 2.93.12 3.24.77.85 1.24 1.93 1.24 3.25 0 4.63-2.8 5.64-5.47 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.82.58A12 12 0 0 0 12 .5Z"/></svg>
-            View GitHub
-          </a>
-          <a class="btn ghost" href="#projects">See Projects</a>
-          <a class="btn ghost" href="#contact">Contact</a>
-        </div>
-      </section>
-
-      <aside class="card reveal" aria-label="Quick profile">
-        <h2 style="margin:0 0 10px;font-size:18px">Quick Profile</h2>
-        <p class="sub" style="margin:0">
-          Open-source tinkerer. Learning in public. Focused on security, edge AI, and useful tools.
-        </p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
-          <span class="pill">⚡ Fast & minimal</span>
-          <span class="pill">🛡️ Privacy-first</span>
-          <span class="pill">🌙 Dark by design</span>
-        </div>
-      </aside>
-    </main>
-
-    <section id="projects" class="reveal">
-      <h2 style="margin:28px 4px 8px">Featured Projects</h2>
-      <p class="sub" style="margin:0 4px 12px">A few starting slots — link them to your pinned repos.</p>
-      <div class="grid">
-        <a class="tile" href="https://github.com/rmehta-vm" target="_blank" rel="noopener">
-          <div>
-            <h3>Project One</h3>
-            <p>Short one-liner about what it does. Replace this with a real repo link.</p>
-          </div>
-          <div class="foot">
-            <span class="pill">#security</span>
-            <span class="pill">#edge-ai</span>
-          </div>
-        </a>
-        <a class="tile" href="https://github.com/rmehta-vm" target="_blank" rel="noopener">
-          <div>
-            <h3>Project Two</h3>
-            <p>Another crisp description. Keep it simple and outcome-focused.</p>
-          </div>
-          <div class="foot">
-            <span class="pill">#python</span>
-            <span class="pill">#iot</span>
-          </div>
-        </a>
-        <a class="tile" href="https://github.com/rmehta-vm" target="_blank" rel="noopener">
-          <div>
-            <h3>Project Three</h3>
-            <p>One sentence value proposition. Link this to a repo or docs.</p>
-          </div>
-          <div class="foot">
-            <span class="pill">#llm</span>
-            <span class="pill">#devtools</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="about" class="card reveal" style="margin-top:22px">
-      <h2 style="margin-top:0">About</h2>
-      <p class="sub">
-        I enjoy building pragmatic tools and documenting the journey. This site is intentionally minimal: fast to load, easy to read, and focused on the work.
-      </p>
-    </section>
-
-    <section id="contact" class="card reveal" style="margin-top:22px">
-      <h2 style="margin-top:0">Contact</h2>
-      <p class="sub">Say hi or share ideas. I’m always open to collaborations.</p>
-      <div class="cta">
-        <a class="btn" href="mailto:hello@yourdomain.example">Email</a>
-        <a class="btn" href="https://github.com/rmehta-vm" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://rmehta-vm.github.io" target="_blank" rel="noopener">This Site</a>
-      </div>
-    </section>
-
-    <footer class="reveal" style="opacity:.8;margin:26px 4px">
-      © <span id="y"></span> R Mehta • Built with vanilla HTML/CSS
-    </footer>
-  </div>
-
-  <script>
-    // year stamp
-    document.getElementById('y').textContent = new Date().getFullYear();
-    // simple scroll reveal for sections already marked with .reveal
-    const ob = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.animationPlayState='running'; ob.unobserve(e.target); }});
-    }, {threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>ob.observe(el));
-  </script>
+  <a href="https://github.com/rmehta-vm" target="_blank" rel="noopener">
+    Visit My GitHub
+  </a>
 </body>
 </html>
