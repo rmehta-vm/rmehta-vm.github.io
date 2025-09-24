@@ -9,10 +9,7 @@ plugins:
 minima:
   skin: dark
 
-# Show top navigation for Home + Knowledgebase
 header_pages:
   - index.md
   - blog/index.md
 
-# (Optional) set your site URL later for better RSS/SEO:
-# url: "https://rmehta-vm.github.io"
