@@ -1,0 +1,15 @@
+title: "Raj Mehta" 
+description: "Portfolio & Knowledgebase"
+theme: minima
+show_excerpts: true
+
+plugins:
+  - jekyll-feed
+
+minima:
+  skin: dark
+
+header_pages:
+  - index.md
+  - blog/index.md
+
