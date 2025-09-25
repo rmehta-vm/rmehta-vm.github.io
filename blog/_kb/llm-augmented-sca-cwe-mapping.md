@@ -1,5 +1,9 @@
-
-LLM‑Augmented SCA: Map CVE→CWE, Cut False Positives, and Shift Left
+---
+title: "LLM‑Augmented SCA: Map CVE→CWE, Cut False Positives, and Shift Left"
+redirect_from:
+  - /2025/09/24/llm-augmented-sca-cwe-mapping/
+  - /blog/2025/09/24/llm-augmented-sca-cwe-mapping/
+---
 ---
 
 ## Why this matters

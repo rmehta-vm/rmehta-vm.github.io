@@ -1,5 +1,9 @@
-
-Making Sense of the Cybersecurity Acronyms: A Layered Program That Works
+---
+title: "Making Sense of the Cybersecurity Acronyms: A Layered Program That Works"
+redirect_from:
+  - /2025/09/24/layered-cybersecurity-program/
+  - /blog/2025/09/24/layered-cybersecurity-program/
+---
 ---
 
 Security leaders today are drowning in acronyms. Every vendor promises the next big thing: VM, CSPM, CNAPP, DSPM, DLP, CASB, SIEM, SOAR, CTEM, SSPM, CIEM… the list goes on.  

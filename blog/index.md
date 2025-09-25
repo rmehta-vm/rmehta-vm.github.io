@@ -1,8 +1,11 @@
 ---
-layout: home
-title: "Knowledgebase"
-permalink: /blog/
+layout: single
+title: "Home"
+permalink: /
+classes: wide
 ---
 
-Welcome to my Knowledgebase — blogs, notes, and research.  
-Latest posts appear below.
+Welcome! This site is now organized as a **Knowledge Base**.  
+Start here: **[Knowledge Base →](/kb/)**
+
+Or learn more **[About Me](/about/)**.
