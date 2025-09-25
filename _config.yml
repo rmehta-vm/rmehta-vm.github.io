@@ -1,15 +1,12 @@
-title: "Vulnerability Management Knowledge Base"
-description: "Clear, practical articles on modern vulnerability management, DevSecOps, and cloud security."
-baseurl: ""
+title: "Vulnerability Management KnowledgeBase"
+description: "Clear, practical guides on vulnerability management, DevSecOps, and cloud security."
 url: "https://rmehta-vm.github.io"
 
 remote_theme: mmistakes/minimal-mistakes@4.24.0
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
-  - jekyll-redirect-from
 
 collections:
   kb:
@@ -23,17 +20,18 @@ defaults:
     values:
       layout: single
       author_profile: false
-      read_time: false
-      share: true
-      related: true
-      classes: wide
       toc: true
-
-include:
-  - _includes
-  - _pages
-  - _kb
-
-data_dir: _data
+      classes: wide
+      show_date: false
+      read_time: false
+      share: false          
+      related: false        
+      sidebar:
+        nav: "kb"
 
 head_custom: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
