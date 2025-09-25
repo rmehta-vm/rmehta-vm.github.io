@@ -12,4 +12,4 @@ Hi, I’m **Raj Mehta**. I build practical **vulnerability management** programs
 - CIEM/SSPM, Cloud & Kubernetes security
 - LLM-assisted triage & fixes, product strategy
 
-**Start with the Knowledge Base:** [/kb/](/kb/)
+**Start with the KnowledgeBase:** [/kb/](/kb/)
