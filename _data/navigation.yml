@@ -1,13 +1,14 @@
 main:
-  - title: "Knowledge Base"
+  - title: "KnowledgeBase"
     url: /kb/
   - title: "About"
     url: /about/
 
-
 kb:
-  - title: Knowledge Base
+  - title: KnowledgeBase
     children:
+      - title: Getting Started
+        url: /kb/
       - title: "Building a High-Quality CVE Research Database for Real-World Vulnerability Management"
         url: /kb/building-cve-research-db/
       - title: "Contextual Package Analysis: Reducing False Positives in Vulnerability"
