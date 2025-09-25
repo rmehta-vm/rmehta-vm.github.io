@@ -1,0 +1,39 @@
+title: "Raj Mehta – Vulnerability Management Knowledge Base"
+description: "Clear, practical articles on modern vulnerability management, DevSecOps, and cloud security."
+baseurl: ""
+url: "https://<your-username>.github.io"
+
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-redirect-from
+
+collections:
+  kb:
+    output: true
+    permalink: /kb/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: kb
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      share: true
+      related: true
+      classes: wide
+      toc: true
+
+include:
+  - _includes
+  - _pages
+  - _kb
+
+data_dir: _data
+
+head_custom: true

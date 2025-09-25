@@ -1,5 +1,9 @@
-
-Scanning Techniques: Host, Network, SBOM, Static — and How to Combine Them
+---
+title: "Scanning Techniques: Host, Network, SBOM, Static — and How to Combine Them"
+redirect_from:
+  - /2025/09/24/scanning-techniques-combined-approach/
+  - /blog/2025/09/24/scanning-techniques-combined-approach/
+---
 ---
 
 **Intro**  
@@ -93,4 +97,3 @@ trivy sbom sbom.json
 ## 7) Summary
 
 No single scan type is enough. A combined approach — SBOM + SAST + image scanning + host runtime scanning (mix of agent + agentless) — gives the widest and most useful view of risk. Use automation for scale and human review for tricky cases.
-

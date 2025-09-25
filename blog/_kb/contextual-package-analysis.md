@@ -1,5 +1,9 @@
-
-Contextual Package Analysis: Reducing False Positives in Vulnerability
+---
+title: "Contextual Package Analysis: Reducing False Positives in Vulnerability"
+redirect_from:
+  - /2025/09/24/contextual-package-analysis/
+  - /blog/2025/09/24/contextual-package-analysis/
+---
 ---
 
 ## Intro

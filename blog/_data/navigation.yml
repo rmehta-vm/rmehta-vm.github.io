@@ -1,0 +1,27 @@
+kb:
+  - title: Knowledge Base
+    children:
+      - title: "Building a High-Quality CVE Research Database for Real-World Vulnerability Management"
+        url: /kb/building-cve-research-db/
+      - title: "Contextual Package Analysis: Reducing False Positives in Vulnerability"
+        url: /kb/contextual-package-analysis/
+      - title: "From Findings to Fixes: An LLM + SAST/SCA Orchestration Playbook"
+        url: /kb/llm-sast-sca-orchestration-playbook/
+      - title: "LLM‑Augmented SCA: Map CVE→CWE, Cut False Positives, and Shift Left"
+        url: /kb/llm-augmented-sca-cwe-mapping/
+      - title: "Making Sense of the Cybersecurity Acronyms: A Layered Program That Works"
+        url: /kb/layered-cybersecurity-program/
+      - title: "OWASP Attack Categories and Their Relation to CWE and CVE"
+        url: /kb/owasp-attacks-and-cwe-cve-mapping/
+      - title: "Scanning Techniques: Host, Network, SBOM, Static — and How to Combine Them"
+        url: /kb/scanning-techniques-combined-approach/
+      - title: "Security Standards and Audit Reports: Why They Matter and How Vulnerability Management Helps"
+        url: /kb/audit-standards-and-vulnerability-management/
+      - title: "Turning Scan Results into Real Protection"
+        url: /kb/turning-scan-results-into-real-protection/
+      - title: "Understanding Vulnerabilities Through the OSI Layers"
+        url: /kb/osi-layer-vulnerabilities/
+      - title: "Vulnerability Management for Containers and Kubernetes: From Image Layers to CI/CD"
+        url: /kb/vm-in-containers-and-kubernetes/
+      - title: "Vulnerability Management: CVE, CIA Triad, CPE, CVSS, Exploits & EPSS"
+        url: /kb/vulnerability-management-basics/
