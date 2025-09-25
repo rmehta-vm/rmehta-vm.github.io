@@ -1,6 +1,6 @@
-title: "Raj Mehta – Vulnerability Management Knowledge Base"
-description: "Clear, practical guides on vulnerability management, DevSecOps, and cloud security."
-baseurl: ""                    # keep "" if publishing as <user>.github.io; set "/<repo>" if publishing from a project repo
+title: "Vulnerability Management Knowledge Base"
+description: "Clear, practical articles on modern vulnerability management, DevSecOps, and cloud security."
+baseurl: ""
 url: "https://rmehta-vm.github.io"
 
 remote_theme: mmistakes/minimal-mistakes@4.24.0
@@ -9,15 +9,13 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
-  - jekyll-redirect-from     # keeps old links working if you add redirects later
+  - jekyll-redirect-from
 
-# Knowledge Base collection (no dates)
 collections:
   kb:
     output: true
     permalink: /kb/:path/
 
-# Defaults for KB pages
 defaults:
   - scope:
       path: ""
@@ -30,20 +28,12 @@ defaults:
       related: true
       classes: wide
       toc: true
-      sidebar:
-        nav: "kb"
 
-# Include these folders in the site
 include:
   - _includes
   - _pages
   - _kb
 
-# Enable custom head include (Mermaid + CSS)
-head_custom: true
+data_dir: _data
 
-# (Optional) syntax highlighter + markdown engine
-markdown: kramdown
-kramdown:
-  input: GFM
-highlighter: rouge
+head_custom: true

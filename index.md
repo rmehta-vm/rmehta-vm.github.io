@@ -1,17 +1,11 @@
 ---
-layout: page
-title: "About Me"
+layout: single
+title: "Home"
+permalink: /
+classes: wide
 ---
 
-# 👋 Hi, I’m Raj Mehta 
+Welcome! This site is organized as a **Knowledge Base** — clear, practical guides on vulnerability management and modern security.
 
-
-## Summary
-- Cyber Security & Vulnerability Management 
-- Edge AI & IoT Development
-- Open-source contributor
-
-
-## Contact
-- **GitHub:** [rmehta-vm](https://github.com/rmehta-vm)
-- **Email:** rm.rmehta01@gmail.com 
+- Start here: **[Knowledge Base →](/kb/)**
+- Learn more: **[About Me](/about/)**

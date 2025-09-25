@@ -1,8 +1,12 @@
 main:
-  - title: "Home"
-    url: /
   - title: "Knowledge Base"
     url: /kb/
+  - title: "About"
+    url: /about/
+
+
+kb:
+  - title: Knowledge Base
     children:
       - title: "Building a High-Quality CVE Research Database for Real-World Vulnerability Management"
         url: /kb/building-cve-research-db/
@@ -28,5 +32,3 @@ main:
         url: /kb/vm-in-containers-and-kubernetes/
       - title: "Vulnerability Management: CVE, CIA Triad, CPE, CVSS, Exploits & EPSS"
         url: /kb/vulnerability-management-basics/
-  - title: "About"
-    url: /about/
