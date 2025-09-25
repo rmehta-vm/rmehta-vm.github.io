@@ -66,19 +66,19 @@ When you zoom out, all these terms actually roll up into **four main goals**.
 - **CTEM, EASM** → Continuous discovery, including shadow IT.  
 - **SSPM, CIEM** → SaaS and cloud identity exposures.  
 
-👉 Together: ensure you can **see all the doors and windows** before attackers do.
+Together: ensure you can **see all the doors and windows** before attackers do.
 
 ### 2. Keep Data Safe
 - **DSPM, DLP, CASB, SSPM**.  
-👉 Together: ensure sensitive **data is stored, shared, and accessed safely**.
+Together: ensure sensitive **data is stored, shared, and accessed safely**.
 
 ### 3. Detect and Respond Fast
 - **SIEM, SOAR, EDR/XDR**.  
-👉 Together: give you **eyes and reflexes** when incidents happen.
+Together: give you **eyes and reflexes** when incidents happen.
 
 ### 4. Control Access and Code
 - **IAM, ZTNA, CIEM, DevSecOps, Provenance, VEX**.  
-👉 Together: ensure only the **right people and right code** get through.
+Together: ensure only the **right people and right code** get through.
 
 ---
 
