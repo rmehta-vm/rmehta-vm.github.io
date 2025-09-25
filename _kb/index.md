@@ -1,5 +1,5 @@
 ---
-title: Knowledge Base
+title: KnowledgeBase
 layout: single
 permalink: /kb/
 classes: wide
@@ -8,4 +8,4 @@ collection: kb
 entries_layout: list
 ---
 
-Welcome to the **Knowledge Base**. These are timeless guides on vulnerability management, supply chain, cloud, and Kubernetes.
+Welcome to the **KnowledgeBase**. These are timeless guides on vulnerability management, supply chain, cloud, and Kubernetes.
