@@ -14,7 +14,7 @@ This article builds on our **LLM‑Augmented SCA** design and shows **how to run
 
 ## Reference pipeline
 
-```mermaid
+<div class="mermaid">
 flowchart TB
    Pull[Pull Request] --> Scan[SAST + SCA + Secrets + IaC]
    Scan --> Q[Finding Queue]
@@ -26,7 +26,7 @@ flowchart TB
    PR --> Tests[CI Tests + Re-Scan]
    Tests -->|pass| Merge
    Tests -->|fail| Rework
-```
+</div>
 
 **Trust boundaries**  
 - **Static tools** are authoritative for facts (file, line, rule, version).  
