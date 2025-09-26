@@ -1,5 +1,7 @@
 ---
+layout: single
 title: "Contextual Package Analysis: Reducing False Positives in Vulnerability"
+order: 60
 redirect_from:
   - /2025/09/24/contextual-package-analysis/
   - /blog/2025/09/24/contextual-package-analysis/
