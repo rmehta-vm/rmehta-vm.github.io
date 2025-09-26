@@ -32,8 +32,10 @@ th { color: #6b7280; font-weight: 600; }
 /* Mermaid diagram spacing */
 .mermaid { margin: 1rem 0; }
 
-/* Hide any leftover theme meta, share, and prev/next blocks */
-.page__meta,
-.page__share,
-.post-pagination,
-.pagination { display: none !important; }
+/* --- Hide footer clutter (copyright/feed/social), meta (Updated), and prev/next --- */
+.page__footer, .site-footer { display: none !important; }     /* footer strip */
+.page__meta, .page__share { display: none !important; }       /* 'Updated', tags, share */
+.post-pagination, .pagination { display: none !important; }   /* Previous / Next */
+
+/* Safety: if any theme meta slips through in different class names */
+.page__date, .page__meta-date, .post__date, .time { display: none !important; }
