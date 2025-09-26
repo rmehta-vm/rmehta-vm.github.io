@@ -13,6 +13,7 @@ collections:
     output: true
     permalink: /kb/:path/
 
+# Site-wide defaults for KB pages
 defaults:
   - scope:
       path: ""
@@ -24,12 +25,20 @@ defaults:
       classes: wide
       show_date: false
       read_time: false
-      share: false          
-      related: false        
+      share: false
+      related: false
       sidebar:
         nav: "kb"
 
-head_custom: true
+head_scripts:
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  - /assets/js/mermaid-init.js
+
+include:
+  - _includes
+  - _pages
+  - _kb
+  - assets
 
 markdown: kramdown
 kramdown:
