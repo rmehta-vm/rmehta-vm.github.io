@@ -1,8 +1,8 @@
 ---
+layout: single
 title: "Turning Scan Results into Real Protection"
-redirect_from:
-  - /2025/09/24/turning-scan-results-into-real-protection/
-  - /blog/2025/09/24/turning-scan-results-into-real-protection/
+order: 50
+
 ---
 ---
 
