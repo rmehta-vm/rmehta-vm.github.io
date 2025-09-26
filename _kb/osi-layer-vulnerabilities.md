@@ -1,8 +1,7 @@
 ---
+layout: single
 title: "Understanding Vulnerabilities Through the OSI Layers"
-redirect_from:
-  - /2025/09/24/osi-layer-vulnerabilities/
-  - /blog/2025/09/24/osi-layer-vulnerabilities/
+order: 20
 ---
 ---
 
