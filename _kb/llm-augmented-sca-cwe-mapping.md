@@ -14,7 +14,7 @@ Most software vulnerabilities in code and dependencies can be described with **C
 
 ## High-level design (best of both worlds)
 
-```mermaid
+<div class="mermaid">
 flowchart LR
   Dev(Commit/Pull Request) -->|CI hook| SCA[SCA/Dependency Scan]
   Dev -->|CI hook| SAST[Static Code Scan]
@@ -25,7 +25,7 @@ flowchart LR
   LLM <---> KB
   LLM --> Verdict[Verdict + CWE Map + Fix Plan]
   Verdict --> PR[PR Comment / Check Run]
-```
+</div>
 
 **Roles**  
 - **SCA/SAST**: produce raw findings with rule IDs, locations, versions. Strong at syntax, taint, license rules.  
