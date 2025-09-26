@@ -1,8 +1,7 @@
 ---
+layout: single
 title: "Scanning Techniques: Host, Network, SBOM, Static — and How to Combine Them"
-redirect_from:
-  - /2025/09/24/scanning-techniques-combined-approach/
-  - /blog/2025/09/24/scanning-techniques-combined-approach/
+order: 40
 ---
 ---
 
