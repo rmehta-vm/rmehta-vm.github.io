@@ -1,8 +1,8 @@
 ---
+layout: single
 title: "Vulnerability Management for Containers and Kubernetes: From Image Layers to CI/CD"
-redirect_from:
-  - /2025/09/24/vm-in-containers-and-kubernetes/
-  - /blog/2025/09/24/vm-in-containers-and-kubernetes/
+order: 110
+
 ---
 ---
 
