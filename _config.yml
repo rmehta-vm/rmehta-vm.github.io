@@ -34,7 +34,6 @@ head_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
 
 include:
-  - _includes
   - _pages
   - _kb
   - assets
