@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "About Me"
+title: ""
 permalink: /about/
 toc: false
 
