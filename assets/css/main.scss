@@ -104,14 +104,27 @@ nav.pagination,
 .post-nav,
 .post-navigation,
 .pager,
-.previous,
-.next {
+.pager--archive,
+.pagination-prev,
+.pagination-next,
+.prev, .previous,
+.next,
+.page__related + nav,           /* just in case */
+.page__inner-wrap + nav.pagination {
   display: none !important;
   visibility: hidden !important;
   height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
+  border: 0 !important;
 }
+
+/* If the theme floats .pagination--pager children, cancel layout side-effects */
+.pagination--pager::before,
+.pagination--pager::after {
+  content: none !important;
+}
+
 
 
 /* Remove any leftover wrapper centering */
