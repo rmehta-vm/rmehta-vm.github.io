@@ -2,8 +2,9 @@
 layout: single
 title: "About Me"
 permalink: /about/
-classes: wide
 toc: false
+sidebar: false 
+
 ---
 
 Hi, I’m **Raj Mehta** - software architect and product strategist with 12+ years of experience designing, building, and scaling cybersecurity and cloud solutions.  
