@@ -50,3 +50,34 @@ th { color: #6b7280; font-weight: 600; }
 
 /* Remove Previous/Next completely */
 .post-pagination, .pagination { display: none !important; }
+
+/* KB list styling */
+.kb-list {
+  margin-top: 2rem;
+}
+
+.kb-item {
+  margin-bottom: 2.2rem;   /* spacing between articles */
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.kb-item h2 {
+  font-size: 1.4rem;
+  margin: 0 0 .4rem;
+}
+
+.kb-item a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.kb-item a:hover {
+  text-decoration: underline;
+}
+
+.kb-desc {
+  font-size: 1rem;
+  color: #4b5563;
+  margin: 0;
+}
