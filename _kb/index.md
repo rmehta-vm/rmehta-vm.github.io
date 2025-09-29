@@ -1,5 +1,5 @@
 ---
-title: KnowledgeBase
+title: Knowledge Base
 layout: single
 permalink: /kb/
 classes: wide
@@ -8,4 +8,16 @@ collection: kb
 entries_layout: list
 ---
 
-Welcome to the **KnowledgeBase**. These are timeless guides on vulnerability management, supply chain, cloud, and Kubernetes.
+Welcome to the **Knowledge Base**. Read in this order:
+
+{% assign pages = site.kb | sort: 'order' %}
+<ol>
+{% for p in pages %}
+  {% if p.url != page.url %}
+  <li>
+    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    {% if p.description %}<br><span style="color:#6b7280">{{ p.description }}</span>{% endif %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ol>
