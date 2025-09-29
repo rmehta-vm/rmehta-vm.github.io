@@ -5,156 +5,96 @@
 @import "minimal-mistakes/skins/default";
 @import "minimal-mistakes";
 
-/* ===================================
-   Professional Font + Base Typography
-   =================================== */
+/* ==============================
+   Full-width, clean site styles
+   ============================== */
 
-/* Inter font (clean, readable) */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
+/* Body typography */
 html { font-size: 17px; }
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  line-height: 1.7;
-  color: #111827; /* neutral-900 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial;
+  line-height: 1.65;
+  color: #1f2937;
   background: #fff;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ==============================
-   Full-width site (no sidebar)
-   ============================== */
-
-/* Kill sidebar columns and use full width */
-.sidebar, .sidebar__left, .sidebar__right { display: none !important; }
-.layout--single .page__inner-wrap { display: block !important; }
-
-/* Make all content full-width with side padding */
-.wrap, .initial-content, .page, main,
-article, .page__content, .page__inner-wrap, .archive {
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 2rem !important; /* breathing room on both sides */
+/* Make all content full-width with some side padding */
+article, .page__content, .page__inner-wrap, main, .archive, .sidebar, .initial-content, .page {
+  max-width: none;    /* remove the central column */
+  margin: 0;          /* no auto-center */
+  padding: 0 2rem;    /* breathing room on left/right */
 }
 
-/* Slightly tighter top spacing on main headings for a “website” feel */
-.page__content > h1:first-child,
-.page__content > h2:first-child { margin-top: 0.8rem; }
-
-/* ==============================
-   Headings & Text Rhythm
-   ============================== */
-h1 { font-size: 2.3rem;  line-height: 1.2;  margin: 1.1rem 0 .85rem; font-weight: 700; letter-spacing: -0.01em; }
-h2 { font-size: 1.7rem;  line-height: 1.3;  margin: 1.0rem 0 .7rem;  font-weight: 650; letter-spacing: -0.005em; }
-h3 { font-size: 1.28rem; line-height: 1.35; margin: .85rem 0 .55rem; font-weight: 600; }
-
-p, ul, ol, blockquote, pre, table { margin: .6rem 0 .9rem; }
-ul, ol { padding-left: 1.2rem; }
-li + li { margin-top: .28rem; }
+/* Headings (balanced, not shouty) */
+h1 { font-size: 2.25rem; line-height: 1.2;  margin: 1.2rem 0 .85rem; font-weight: 730; }
+h2 { font-size: 1.625rem; line-height: 1.3; margin: 1.0rem 0 .65rem; font-weight: 670; }
+h3 { font-size: 1.25rem;  line-height: 1.35; margin: .8rem 0 .5rem;  font-weight: 600; }
 
 /* Links */
-a { color: #1d4ed8; text-decoration: none; }
+a { color: #2563eb; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* ==============================
-   Code, Tables, Blockquotes
-   ============================== */
+/* Code & Tables */
 code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: .96rem; }
-
-pre {
-  background: #0b1220;   /* deep navy for contrast */
-  color: #e5e7eb;
-  padding: 1rem 1.2rem;
-  border-radius: 8px;
-  overflow: auto;
-}
-
-code:not(pre code) {
-  background: #f3f4f6;
-  padding: .15rem .35rem;
-  border-radius: 4px;
-}
-
-table { border-collapse: collapse; width: 100%; font-size: 1rem; }
-th, td { border-bottom: 1px solid #e5e7eb; padding: .6rem .7rem; text-align: left; }
+table { border-collapse: collapse; width: 100%; font-size: .98rem; }
+th, td { border-bottom: 1px solid #e5e7eb; padding: .55rem .65rem; text-align: left; }
 th { color: #6b7280; font-weight: 600; }
 
-/* ==============================
-   Mermaid Diagrams
-   ============================== */
-.mermaid { margin: 1.2rem 0; }
-.mermaid svg { max-width: 100%; height: auto; }
+/* Mermaid */
+.mermaid { margin: 1rem 0; }
 
-/* ==============================
-   Clean UI: hide meta/footer/prev-next
-   ============================== */
-.page__meta, .page__share { display: none !important; }     /* 'Updated', tags, share */
-.page__footer, .site-footer { display: none !important; }   /* footer strip */
+/* Hide meta + share + footer clutter */
+.page__meta, .page__share { display: none !important; }  /* 'Updated', tags, share */
+.page__footer, .site-footer { display: none !important; }/* footer strip */
 .page__date, .page__meta-date, .post__date, .time { display: none !important; }
-.post-pagination, .pagination { display: none !important; } /* remove prev/next */
 
-/* ==============================
-   KB List Styling (/kb)
-   ============================== */
-.kb-list { margin-top: 1.5rem; }
+/* Remove Previous/Next completely */
+.post-pagination, .pagination { display: none !important; }
+
+/* KB list styling */
+.kb-list {
+  margin-top: 2rem;
+}
 
 .kb-item {
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.2rem;   /* spacing between articles */
   padding-bottom: 1.2rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .kb-item h2 {
-  font-size: 1.45rem;
-  margin: 0 0 .35rem;
-  font-weight: 650;
+  font-size: 1.4rem;
+  margin: 0 0 .4rem;
 }
 
-.kb-item a { color: #1d4ed8; text-decoration: none; }
-.kb-item a:hover { text-decoration: underline; }
+.kb-item a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.kb-item a:hover {
+  text-decoration: underline;
+}
 
 .kb-desc {
-  font-size: 1.02rem;
-  color: #4b5563;  /* slate-600 */
+  font-size: 1rem;
+  color: #4b5563;
   margin: 0;
 }
 
-/* ==============================
-   Align masthead & content gutters
-   ============================== */
+/* Kill sidebar column and use full width */
+.sidebar, .sidebar__left, .sidebar__right { display: none !important; }
+.layout--single .page__inner-wrap { display: block !important; }
 
-/* Make masthead use same full-width + 2rem side padding as content */
-.masthead,
-.masthead .wrap {
-  max-width: none !important;
+/* Make the content span the whole row */
+.layout--single .page__content {
+  float: none !important;
+  width: auto !important;
   margin: 0 !important;
-  padding: 0 2rem !important; /* must match page content padding */
-  box-sizing: border-box;
+  padding: 0 2rem;   /* keep some breathing space on both sides */
 }
 
-/* Keep nav items aligned left with no extra spacing */
-.greedy-nav { justify-content: flex-start !important; }
-.greedy-nav .site-title,
-.greedy-nav a { margin: 0 !important; }
-
-/* Ensure archives and generic content containers align from the left */
-.archive, .page__content, article {
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-}
-
-/* ==============================
-   Small-screen tweaks
-   ============================== */
-@media (max-width: 640px) {
-  html { font-size: 16px; }
-  .wrap, .initial-content, .page, main,
-  article, .page__content, .page__inner-wrap, .archive,
-  .masthead, .masthead .wrap {
-    padding: 0 1.2rem !important;
-  }
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.45rem; }
+/* Remove any leftover wrapper centering */
+.wrap, .initial-content, .page, main {
+  margin: 0 !important;
 }
