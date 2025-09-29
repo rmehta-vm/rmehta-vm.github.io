@@ -1,8 +1,8 @@
 ---
+layout: single
 title: "From Findings to Fixes: An LLM + SAST/SCA Orchestration Playbook"
-redirect_from:
-  - /2025/09/24/llm-sast-sca-orchestration-playbook/
-  - /blog/2025/09/24/llm-sast-sca-orchestration-playbook/
+order: 100
+
 ---
 ---
 
