@@ -1,5 +1,5 @@
 ---
-title: Welcome readers!
+title: ""
 layout: single
 permalink: /kb/
 toc: false
@@ -10,6 +10,7 @@ order: 0
 
 ---
 
+Welcome, readers! 
 To get the most value from these vulnerability management articles, follow them in this sequence:
 
 {% assign pages = site.kb | sort: 'order' %}
