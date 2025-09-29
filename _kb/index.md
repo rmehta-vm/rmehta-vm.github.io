@@ -14,13 +14,15 @@ order: 0
 To get the most value from these vulnerability management articles, follow them in this sequence:
 
 {% assign pages = site.kb | sort: 'order' %}
-<ol>
+<div class="kb-list">
 {% for p in pages %}
   {% if p.url != page.url %}
-  <li>
-    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-    {% if p.description %}<br><span style="color:#6b7280">{{ p.description }}</span>{% endif %}
-  </li>
+  <div class="kb-item">
+    <h2><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
+    {% if p.description %}
+    <p class="kb-desc">{{ p.description }}</p>
+    {% endif %}
+  </div>
   {% endif %}
 {% endfor %}
-</ol>
+</div>
