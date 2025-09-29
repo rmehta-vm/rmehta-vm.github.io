@@ -11,7 +11,7 @@ order: 0
 
 ---
 
-Welcome to the **Knowledge Base**. Read in this order:
+Welcome readers! please follow this order to get best:
 
 {% assign pages = site.kb | sort: 'order' %}
 <ol>
