@@ -1,5 +1,5 @@
 ---
-title: Knowledge Base
+title: Welcome readers!
 layout: single
 permalink: /kb/
 classes: wide
@@ -11,7 +11,7 @@ order: 0
 
 ---
 
-Welcome readers! please follow this order to get best:
+Please follow this order to get best:
 
 {% assign pages = site.kb | sort: 'order' %}
 <ol>
