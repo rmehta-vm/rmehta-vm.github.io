@@ -44,7 +44,7 @@ flowchart TB
 
 ---
 
-## Output schema (expanded)
+## Output schema
 
 ```json
 {
@@ -125,7 +125,7 @@ flowchart TB
 
 ---
 
-## Rollout plan (safe and incremental)
+## Rollout plan
 
 1) Start **advisory mode**: LLM suggests fixes, no code changes.  
 2) Enable **suggested diffs** behind a feature flag for low-risk rules.  
