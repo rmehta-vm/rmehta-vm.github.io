@@ -46,5 +46,5 @@ th { color: #6b7280; font-weight: 600; }
 /* Hide footer/copyright/feed, Updated meta, and prev/next */
 .page__footer, .site-footer { display: none !important; }     /* footer strip */
 .page__meta, .page__share { display: none !important; }       /* 'Updated', tags, share */
-.post-pagination, .pagination { display: none !important; }   /* Previous / Next */
+/* .post-pagination, .pagination { display: none !important; } */   /* Previous / Next */
 .page__date, .page__meta-date, .post__date, .time { display: none !important; } /* safety */
