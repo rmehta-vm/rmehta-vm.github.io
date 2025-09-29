@@ -1,398 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap");
 
-:root {
-  --accent: #2563eb;
-  --accent-dark: #1d4ed8;
-  --accent-muted: #93c5fd;
-  --surface: #f8fafc;
-  --surface-strong: #0f172a;
-  --text-primary: #0b1120;
-  --text-muted: #4b5563;
-  --card-border: rgba(148, 163, 184, 0.35);
-}
+---
+---
 
-html {
-  font-size: 16px;
-}
+/* Load Minimal Mistakes first */
+@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes";
 
+/* ==============================
+   Full-width, clean site styles
+   ============================== */
+
+/* Body typography */
+html { font-size: 17px; }
 body {
-  font-family: "Poppins", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.7;
-  color: var(--text-primary);
-  background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 40%),
-    radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.08), transparent 35%),
-    #ffffff;
-  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial;
+  line-height: 1.65;
+  color: #1f2937;
+  background: #fff;
 }
 
-.page {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 2.5rem 4rem;
+/* Make all content full-width with some side padding */
+article, .page__content, .page__inner-wrap, main, .archive, .sidebar, .initial-content, .page {
+  max-width: none;    /* remove the central column */
+  margin: 0;          /* no auto-center */
+  padding: 0 2rem;    /* breathing room on left/right */
 }
 
-@media (max-width: 768px) {
-  .page {
-    padding: 0 1.6rem 3rem;
-  }
-}
-
-/* Masthead alignment */
-.masthead {
-  background: transparent;
-  box-shadow: none;
-  padding: 1.8rem 0 1.2rem;
-}
-
-.masthead__inner-wrap {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 0;
-}
-
-.site-title {
-  font-family: "Source Serif 4", "Times New Roman", serif;
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin: 0;
-  color: var(--text-primary);
-}
-
-nav#site-nav {
-  margin-left: auto;
-}
-
-nav#site-nav ul,
-.masthead__menu ul,
-.site-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav#site-nav a,
-.masthead__menu a,
-.site-nav a {
-  font-weight: 500;
-  color: var(--text-primary);
-  letter-spacing: 0.01em;
-  transition: color 0.2s ease;
-}
-
-nav#site-nav a:hover,
-.masthead__menu a:hover,
-.site-nav a:hover {
-  color: var(--accent);
-}
-
-/* Typography */
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Source Serif 4", "Times New Roman", serif;
-  font-weight: 600;
-  color: var(--surface-strong);
-  margin: 0 0 0.75rem;
-}
-
-h1 {
-  font-size: clamp(2.4rem, 4vw, 3rem);
-  line-height: 1.15;
-}
-
-h2 {
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  line-height: 1.2;
-}
-
-h3 {
-  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
-  line-height: 1.3;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent-dark);
-  text-decoration: none;
-}
-
-p {
-  margin: 0 0 1.2rem;
-  color: var(--text-muted);
-}
-
-/* Hero */
-.landing-hero {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(37, 99, 235, 0.65));
-  color: #f8fafc;
-  border-radius: 28px;
-  padding: clamp(2.5rem, 6vw, 4rem);
-  margin: 0 0 3rem;
-  position: relative;
-  overflow: hidden;
-  min-height: 70vh;
-  display: grid;
-  align-content: center;
-  gap: 1.4rem;
-}
-
-.landing-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 20% 20%, rgba(148, 163, 184, 0.35), transparent 55%),
-    radial-gradient(circle at 80% 15%, rgba(191, 219, 254, 0.45), transparent 50%);
-  pointer-events: none;
-}
-
-.landing-hero__content {
-  position: relative;
-  z-index: 1;
-  max-width: 640px;
-}
-
-.landing-hero__badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
-  background: rgba(148, 163, 184, 0.2);
-  color: #e2e8f0;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.landing-hero p {
-  color: #e2e8f0;
-  font-size: 1.05rem;
-}
-
-.landing-hero__cta {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  padding: 0.75rem 1.75rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-
-.btn--primary {
-  background: #ffffff;
-  color: var(--surface-strong);
-  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.25);
-}
-
-.btn--primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.3);
-}
-
-.btn--ghost {
-  background: rgba(255, 255, 255, 0.12);
-  color: #f8fafc;
-  border: 1px solid rgba(226, 232, 240, 0.4);
-}
-
-.btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.22);
-}
-
-.landing-hero__stats {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  gap: 1rem;
-  margin: 0;
-  padding: 1.2rem 1.4rem;
-  border-radius: 18px;
-  background: rgba(15, 23, 42, 0.55);
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  list-style: none;
-}
-
-.landing-hero__stats li {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.landing-hero__stats .label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: rgba(226, 232, 240, 0.6);
-}
-
-.landing-hero__stats .value {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #f8fafc;
-}
-
-/* Highlights */
-.landing-highlights {
-  display: grid;
-  gap: 1.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  margin-bottom: 3.2rem;
-}
-
-.landing-card {
-  background: #ffffff;
-  border: 1px solid var(--card-border);
-  border-radius: 22px;
-  padding: 1.8rem;
-  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.landing-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
-}
-
-.landing-card p {
-  color: var(--text-muted);
-}
-
-.landing-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 0.45rem;
-}
-
-.landing-card li::before {
-  content: "\2713";
-  color: var(--accent);
-  font-weight: 600;
-  margin-right: 0.5rem;
-}
-
-/* Outline */
-.landing-outline {
-  margin-bottom: 3.5rem;
-}
-
-.landing-outline__grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.landing-outline__item {
-  background: var(--surface);
-  border-radius: 20px;
-  padding: 1.8rem;
-  border: 1px solid rgba(148, 163, 184, 0.3);
-}
-
-.landing-outline__item h3 {
-  margin-bottom: 0.5rem;
-}
-
-.landing-outline__item ul {
-  margin: 0;
-  padding-left: 1.1rem;
-  display: grid;
-  gap: 0.35rem;
-}
+/* Headings (balanced, not shouty) */
+h1 { font-size: 2.25rem; line-height: 1.2;  margin: 1.2rem 0 .85rem; font-weight: 730; }
+h2 { font-size: 1.625rem; line-height: 1.3; margin: 1.0rem 0 .65rem; font-weight: 670; }
+h3 { font-size: 1.25rem;  line-height: 1.35; margin: .8rem 0 .5rem;  font-weight: 600; }
 
 /* Links */
-.landing-links {
-  text-align: center;
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Code & Tables */
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: .96rem; }
+table { border-collapse: collapse; width: 100%; font-size: .98rem; }
+th, td { border-bottom: 1px solid #e5e7eb; padding: .55rem .65rem; text-align: left; }
+th { color: #6b7280; font-weight: 600; }
+
+/* Mermaid */
+.mermaid { margin: 1rem 0; }
+
+/* Hide meta + share + footer clutter */
+.page__meta, .page__share { display: none !important; }  /* 'Updated', tags, share */
+.page__footer, .site-footer { display: none !important; }/* footer strip */
+.page__date, .page__meta-date, .post__date, .time { display: none !important; }
+
+/* Remove Previous/Next completely */
+.post-pagination, .pagination { display: none !important; }
+
+/* KB list styling */
+.kb-list {
+  margin-top: 2rem;
 }
 
-.landing-links__grid {
-  margin-top: 1.6rem;
-  display: inline-grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.landing-links__grid a {
-  border-radius: 16px;
-  padding: 1rem 1.5rem;
-  border: 1px solid var(--card-border);
-  background: #ffffff;
-  color: var(--surface-strong);
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-}
-
-.landing-links__grid a:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  transform: translateY(-2px);
-}
-
-/* Tables and code */
-code,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 0.95rem;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th,
-td {
+.kb-item {
+  margin-bottom: 2.2rem;   /* spacing between articles */
+  padding-bottom: 1.2rem;
   border-bottom: 1px solid #e5e7eb;
-  padding: 0.5rem 0.6rem;
-  text-align: left;
 }
 
-th {
-  color: #6b7280;
-  font-weight: 600;
+.kb-item h2 {
+  font-size: 1.4rem;
+  margin: 0 0 .4rem;
 }
 
-.mermaid {
-  margin: 1rem 0;
+.kb-item a {
+  color: #1d4ed8;
+  text-decoration: none;
 }
 
-/* Hide footer/meta/pagination */
-.page__footer,
-.site-footer {
-  display: none !important;
+.kb-item a:hover {
+  text-decoration: underline;
 }
 
-.page__meta,
-.page__share {
-  display: none !important;
+.kb-desc {
+  font-size: 1rem;
+  color: #4b5563;
+  margin: 0;
 }
 
-.post-pagination,
-.pagination {
-  display: none !important;
+/* Kill sidebar column and use full width */
+.sidebar, .sidebar__left, .sidebar__right { display: none !important; }
+.layout--single .page__inner-wrap { display: block !important; }
+
+/* Make the content span the whole row */
+.layout--single .page__content {
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 2rem;   /* keep some breathing space on both sides */
 }
 
-.page__date,
-.page__meta-date,
-.post__date,
-.time {
-  display: none !important;
+/* Remove any leftover wrapper centering */
+.wrap, .initial-content, .page, main {
+  margin: 0 !important;
 }
