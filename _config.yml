@@ -12,6 +12,8 @@ collections:
   kb:
     output: true
     permalink: /kb/:path/
+    sort_by: order
+    order: ascending
 
 # Site-wide defaults for KB pages
 defaults:
