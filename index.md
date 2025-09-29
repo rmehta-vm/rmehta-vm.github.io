@@ -1,7 +1,8 @@
 ---
 layout: single
 permalink: /
-classes: wide
+sidebar: false 
+
 ---
 
 Cybersecurity today is a race between defenders and attackers. Every piece of software and infrastructure you rely on—from operating systems to cloud workloads to third-party libraries—can become a doorway for risk if not properly managed. That’s where **Vulnerability Management (VM)** comes in.
