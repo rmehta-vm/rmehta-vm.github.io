@@ -1,8 +1,8 @@
 ---
+layout: single
 title: "Making Sense of the Cybersecurity Acronyms: A Layered Program That Works"
-redirect_from:
-  - /2025/09/24/layered-cybersecurity-program/
-  - /blog/2025/09/24/layered-cybersecurity-program/
+order: 120
+
 ---
 ---
 
