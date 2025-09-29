@@ -14,7 +14,7 @@
 
 html { font-size: 17px; }
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.7;
   color: #111827; /* neutral-900 */
   background: #fff;
@@ -122,12 +122,37 @@ th { color: #6b7280; font-weight: 600; }
 }
 
 /* ==============================
+   Align masthead & content gutters
+   ============================== */
+
+/* Make masthead use same full-width + 2rem side padding as content */
+.masthead,
+.masthead .wrap {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 2rem !important; /* must match page content padding */
+  box-sizing: border-box;
+}
+
+/* Keep nav items aligned left with no extra spacing */
+.greedy-nav { justify-content: flex-start !important; }
+.greedy-nav .site-title,
+.greedy-nav a { margin: 0 !important; }
+
+/* Ensure archives and generic content containers align from the left */
+.archive, .page__content, article {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* ==============================
    Small-screen tweaks
    ============================== */
 @media (max-width: 640px) {
   html { font-size: 16px; }
   .wrap, .initial-content, .page, main,
-  article, .page__content, .page__inner-wrap, .archive {
+  article, .page__content, .page__inner-wrap, .archive,
+  .masthead, .masthead .wrap {
     padding: 0 1.2rem !important;
   }
   h1 { font-size: 2rem; }
