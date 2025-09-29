@@ -6,11 +6,9 @@ classes: wide
 toc: false
 ---
 
-Hi, I’m **Raj Mehta**.  
+Hi, I’m **Raj Mehta** - software architect and product strategist with 12+ years of experience designing, building, and scaling cybersecurity and cloud solutions.  
 
-I am a **software architect and product strategist** with 12+ years of experience designing, building, and scaling cybersecurity and cloud solutions.  
-
-My career has spanned working with **industry leaders in vulnerability management and cloud security**, contributing to products used globally by enterprises.
+My career has spanned working with industry leaders in vulnerability management and cloud security, contributing to products used globally by enterprises.
 
 **Focus Areas**  
 - Vulnerability Management (VM), SCA/SAST, SBOM, CTEM/EASM  
