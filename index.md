@@ -4,8 +4,6 @@ permalink: /
 classes: wide
 ---
 
-# Welcome to the Vulnerability Management Knowledge Base
-
 Cybersecurity today is a race between defenders and attackers. Every piece of software and infrastructure you rely on—from operating systems to cloud workloads to third-party libraries—can become a doorway for risk if not properly managed. That’s where **Vulnerability Management (VM)** comes in.
 
 This knowledge base is designed to give you a clear, practical understanding of VM:  
