@@ -7,7 +7,6 @@ collection: kb
 entries_layout: list
 nav_exclude: true
 order: 0
-sidebar: false 
 
 ---
 
