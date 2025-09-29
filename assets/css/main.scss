@@ -147,3 +147,55 @@ nav.pagination,
 html, body { margin: 0 !important; }
 
 .page__hero, .page__hero--overlay { margin: 0 !important; padding-left: 0 !important; }
+
+/* ==============================
+   HARD LEFT, FULL-WIDTH BASELINE
+   ============================== */
+
+/* Single source of truth for side gutters */
+:root { --site-gutter-x: 2rem; }
+
+/* Kill any sidebar columns & grid offsets */
+.page__sidebar, .sidebar, .sidebar__left, .sidebar__right { display: none !important; }
+
+/* Force all major wrappers to full width, no centering */
+.masthead,
+.masthead .wrap,
+.wrap, .initial-content, .page, main,
+.page__inner-wrap, .page__content,
+.archive, article {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  float: none !important;
+  padding-left: var(--site-gutter-x) !important;
+  padding-right: var(--site-gutter-x) !important;
+  box-sizing: border-box !important;
+}
+
+/* Cancel theme’s split layout on single pages */
+.layout--single .page__inner-wrap { display: block !important; }
+.layout--single .page__content   { width: 100% !important; }
+
+/* Some MM builds set max-width on .initial-content with higher specificity — override again */
+body .initial-content { max-width: none !important; }
+
+/* Greedy nav aligned with the same left gutter */
+.greedy-nav {
+  justify-content: flex-start !important;
+  padding-left: var(--site-gutter-x) !important;
+  padding-right: var(--site-gutter-x) !important;
+}
+.greedy-nav .site-title, .greedy-nav a { margin-left: 0 !important; }
+
+/* If any grid items try to split columns, make them full-width */
+.grid__item { width: 100% !important; float: none !important; }
+
+/* Optional: tighter top spacing for a “website” feel */
+.page__content > h1:first-child,
+.page__content > h2:first-child { margin-top: 0.75rem !important; }
+
+/* Mobile gutter */
+@media (max-width: 640px) {
+  :root { --site-gutter-x: 1.2rem; }
+}
