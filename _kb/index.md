@@ -6,6 +6,9 @@ classes: wide
 toc: false
 collection: kb
 entries_layout: list
+nav_exclude: true
+order: 0
+
 ---
 
 Welcome to the **Knowledge Base**. Read in this order:
