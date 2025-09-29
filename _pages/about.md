@@ -3,7 +3,6 @@ layout: single
 title: "About Me"
 permalink: /about/
 toc: false
-sidebar: false 
 
 ---
 
