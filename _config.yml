@@ -24,13 +24,11 @@ defaults:
       layout: single
       author_profile: false
       toc: true
-      classes: wide
       show_date: false
       read_time: false
       share: false
       related: false
-      sidebar:
-        nav: "kb"
+     sidebar: false 
 
 head_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
