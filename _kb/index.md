@@ -11,7 +11,7 @@ order: 0
 
 ---
 
-Please follow this order to get best:
+To get the most value from these vulnerability management articles, follow them in this sequence:
 
 {% assign pages = site.kb | sort: 'order' %}
 <ol>
