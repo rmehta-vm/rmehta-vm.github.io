@@ -32,7 +32,6 @@ defaults:
 
 head_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
-  - /assets/mermaid-init.js
 
 include:
   - _includes
