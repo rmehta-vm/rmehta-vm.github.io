@@ -28,7 +28,7 @@ defaults:
       read_time: false
       share: false
       related: false
-     sidebar: false 
+      sidebar: false 
 
 head_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
