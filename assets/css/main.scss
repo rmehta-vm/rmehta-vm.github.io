@@ -124,3 +124,26 @@ nav.pagination,
   h1 { font-size: 2rem; }
   h2 { font-size: 1.45rem; }
 }
+
+.masthead,
+.masthead .wrap,
+.wrap, .initial-content, .page, main,
+.page__inner-wrap, .page__content, article, .archive {
+  max-width: none !important;
+  margin: 0 !important;
+  padding-left: 1.25rem !important;  /* left gutter */
+  padding-right: 1.25rem !important; /* right gutter */
+  box-sizing: border-box;
+}
+
+.sidebar, .sidebar__left, .sidebar__right { display: none !important; }
+.layout--single .page__inner-wrap { display: block !important; }
+.layout--single .page__content {
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+html, body { margin: 0 !important; }
+
+.page__hero, .page__hero--overlay { margin: 0 !important; padding-left: 0 !important; }
