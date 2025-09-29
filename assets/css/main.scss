@@ -95,6 +95,25 @@ th { color: #6b7280; font-weight: 600; }
   padding: 0 2rem;   /* keep some breathing space on both sides */
 }
 
+nav.pagination,
+.pagination,
+.post-pagination,
+.pagination--pager,
+.pagination__list,
+.pagination__title,
+.post-nav,
+.post-navigation,
+.pager,
+.previous,
+.next {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
 /* Remove any leftover wrapper centering */
 .wrap, .initial-content, .page, main {
   margin: 0 !important;
