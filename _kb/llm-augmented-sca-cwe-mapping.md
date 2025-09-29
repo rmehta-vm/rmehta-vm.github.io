@@ -12,7 +12,7 @@ Most software vulnerabilities in code and dependencies can be described with **C
 
 ---
 
-## High-level design (best of both worlds)
+## High-level design
 
 <div class="mermaid">
 flowchart LR
@@ -114,7 +114,7 @@ Tasks:
 
 ---
 
-## Cutting false positives (techniques that work)
+## Cutting false positives
 
 - **Reachability gates**: require either (a) call-path from entrypoint or (b) package is runtime-loaded in prod.  
 - **Config correlation**: some issues exist only when certain flags are enabled. Provide config snapshot to LLM.  
@@ -124,7 +124,7 @@ Tasks:
 
 ---
 
-## Safe autofix (guardrails)
+## Safe autofix
 
 - Generate **small diffs** only.  
 - Run **unit tests + SAST again** on patched branch.  
@@ -133,7 +133,7 @@ Tasks:
 
 ---
 
-## Evaluation (keep it honest)
+## Evaluation
 
 Track: precision/recall, FP rate, time-to-fix, % auto-closed by tests, developer accept rate. Create a **golden set** of labeled findings mapped to CWE to regression-test the LLM prompt + static rules after each change.
 
