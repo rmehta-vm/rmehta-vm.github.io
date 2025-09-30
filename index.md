@@ -17,5 +17,5 @@ This knowledge base is designed to give you a clear, practical understanding of 
 Think of this as your **guided path** from basics to advanced practice. Whether you’re a student, a security engineer, or a leader building strategy, you’ll find material that explains **what matters, why it matters, and how to act**.
 
 
-- **[Knowledge Base →](/kb/)**
+- **[Knowledge Base](/kb/)**
 - **[About Me](/about/)**
