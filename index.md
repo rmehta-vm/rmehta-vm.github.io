@@ -5,7 +5,7 @@ toc: false
 
 ---
 
-Cybersecurity today is a race between defenders and attackers. Every piece of software and infrastructure you rely on—from operating systems to cloud workloads to third-party libraries—can become a doorway for risk if not properly managed. Cybersecurity involves a wide range of activities, such as threat intelligence, incident response, data encryption, access control, security awareness training, and compliance, all of which work together to protect against cyberattacks. **Vulnerability Management** plays crucial role here.
+Cybersecurity today is a race between defenders and attackers. Every piece of software and infrastructure you rely on—from operating systems to cloud workloads to third-party libraries—can become a doorway for risk if not properly managed. Cybersecurity involves a wide range of activities, such as threat intelligence, incident response, data encryption, access control, security awareness training, and compliance, all of which work together to protect against cyberattacks. **Vulnerability Management(VM)** plays crucial role here.
 
 This knowledge base is designed to give you a clear, practical understanding of VM:  
 - **Foundations**: Learn what CVEs are, how the CIA triad guides security, and how to read CPEs, CVSS scores, and EPSS predictions.  
