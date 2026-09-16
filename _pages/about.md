@@ -16,5 +16,3 @@ My career has spanned working with industry leaders in vulnerability management 
 - LLM-assisted triage & fixes, product strategy  
 
 Start here: **[Knowledge Base](/kb/)**  
-
-Feel free to connect with me at **rm.rmehta01@gmail.com**
